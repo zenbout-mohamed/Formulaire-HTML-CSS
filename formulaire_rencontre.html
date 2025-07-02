@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/formulaire_rencontre.css">
+    <title>Formulaire-Rencontre</title>
+</head>
+<body>
+    <main>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Information Personnelle</legend>
+
+                <label for="firstname">Prénom :</label>
+                <input type="text" name ="prenom" id ="prenom" placeholder="Entrez votre Prénom:" required/>
+
+                <label for="lastname">Nom :</label>
+                <input type="text" name ="nom" id ="nom" placeholder="Entrez votre Nom:" required/>
+
+                <label for="email">Email :</label>
+                <input type="email" name ="email" id ="email" placeholder="Email:" required/>
+
+                <label for="password">Password :</label>
+                <input type="password" name ="password" id ="password" placeholder="Mot De Passe:" required/>
+
+                <label for="confirm_pass">Confirmation Password :</label>
+                <input type="password" name ="confirm_pass" id ="confirm_pass" required/>
+
+                <label for="age">Âge :</label>
+                <input type="number" id="age" name="age" min="18" placeholder="Votre Âge :" required/>
+
+                <label for="date">Date de Naissance :</label>
+                <input type="date" name ="birth" id ="birth" required/>
+
+                <label for="genre">Genre :</label>
+                    <select name="genre" id="genre">
+                        <option value="Homme" selected>Homme</option>
+                        <option value="Femme">Femme</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+
+                <label for="orientation">Orientation :</label>
+                <select name="orientation" id="orientation">
+                    <option value="hetero">Hétérosexuel</option>
+                    <option value="bi">Bisexuel</option>
+                    <option value="homo">Homosexuel</option>
+                    <option value="lesbienne">Lesbienne</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Description Physique :</legend>
+
+                <label for="photo">Photo de Profil :</label>
+                <input type="file" name="photo" id ="photo">
+                <label for="taille">Taille (cm) :</label>
+                <input type="number"  name="taille" id ="taille" >
+                <label for="poids">Poids (kg) :</label>
+                <input type="number"  name="poids" id ="poids">
+                <label for="yeux">Yeux</label>
+                <input type="text"  name="yeux" id ="yeux">
+                <label for="cheveux">Cheveux :</label>
+                <input type="text"  name="cheveux" id ="cheveux">
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Personnalité : </legend>
+                <label for="description">Description :</label>
+                <textarea name="description" id="description" cols="30" rows="4"></textarea>
+                <label for="trait">Traits de personnalité :</label>
+                <select name="traits" id="traits">
+                    <option value="">Sportif</option>
+                    <option value="">Créatif</option>
+                    <option value="">Curieux</option>
+                    <option value="">Calme</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Centre d'Interets :</legend>
+
+                <label for="salle"><input type="checkbox" name="sport" id="sport">Sport</label>
+                <label for="voyage"><input type="checkbox" name="voyage" id="voyage">Voyage</label>
+                <label for="jeux"><input type="checkbox" name="jeux" id="jeux">Jeux</label>
+                <label for="muique"><input type="checkbox" name="musique" id="musique">Musique</label>
+                <label for="cuisine"><input type="checkbox" name="cuisine" id="cuisine">Cuisine</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Localisation :</legend>
+
+                <label for="ville">Ville :</label>
+                <input type="text" name="ville" id ="ville" placeholder="Ville/Département" required/>
+                <label for="Code Postal">Code Postal :</label>
+                <input type="text" name="code_postal" id ="code_postal" placeholder ="N° Département"/>
+            </fieldset>
+
+            <button type="submit">S'inscrire</button>
+        </form>
+    </main>
+    
+</body>
+</html>
