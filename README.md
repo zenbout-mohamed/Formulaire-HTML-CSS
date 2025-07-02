@@ -1,2 +1,3 @@
 # Formulaire-HTML-CSS
-Réalisé par Visual code Studio, 
+Réalisé par Visual Code Studio, 
+Language HTML/CSS.
